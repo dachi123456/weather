@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.search{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 73%;
+  margin: auto;
+  border-radius: 1rem;
+  border: 1px solid gray;
+  height: 2rem;
+  
+}
+.search input{
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  color: rgb(130, 133, 138);
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  width: 100%;
+  height: 97.5vh;
+  background-image: url('./assets/bjark-DZ975EkUJH0-unsplash.jpg');
+  padding-top: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 3rem;
+}
+.top p{
+  font-size: 1.8rem;
+  color: white;
+  
+}
+.temp h1{
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 1rem;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+}
+.bottom p{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bottom .bold{
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search button{
+  width: 7rem;
+  height: 2.2rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  border: none;
+  color: rgb(130, 133, 138);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.search button:hover{
+  color: white;
+  scale: 1.1;
 }
